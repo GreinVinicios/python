@@ -27,3 +27,10 @@ The project will start listening on port 5000.
   "author": "J.K. Howling"
 }
 ```
+
+# Docker
+Building and running the docker image
+```bash
+docker build . -t greinvinicios/api:lts
+docker run --network=host --name api --rm -d -p 5000:5000 greinvinicios/api:lts
+```
